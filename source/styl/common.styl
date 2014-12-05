@@ -1,0 +1,261 @@
+/*
+	proscom.ru 
+	Simple Communication
+*/
+
+
+//	#GLOBAL
+// ===============================================
+html, body
+	position relative
+	height: 100%
+*
+	margin 0
+	padding 0
+	border 0
+	outline 0
+
+
+//	#TOOLS
+// ===============================================
+clearfix()
+	&:before
+	&:after
+		content ""; display table; clear both;
+.fl-left
+	float left
+.fl-right
+	float right
+.disp-tc
+	display table-cell 
+.disp-tc_m
+	display table-cell 
+	vertical-align middle
+
+pointer()
+	cursor pointer
+full()
+	box-sizing border-box;
+mrno()
+	margin 0;
+pdno()
+	padding 0;
+cover()
+	background-size cover;
+hide()
+	display none;
+tdn()
+	text-decoration none;
+tdu()
+	text-decoration underline;
+
+anim()
+	transition 0.3s ease-out;
+anim-all()
+	transition all 0.3s ease-out;
+anim-bg()
+	transition background-image 0.3s ease-out;
+anim-color()
+	transition color 0.3s ease-out;
+anim-op()
+	transition opacity 0.3s ease-out;
+
+.clear
+	clearfix()
+.hide
+	hide()
+.float-right
+	float right;
+
+
+//	TEXT
+// ===============================================
+mainfont()
+	font-family: 'latoregular';
+mediumfont()
+	font-family: 'latomedium';
+latolight()
+	font-family: 'latolight';
+latoblack()
+	font-family: 'latoblack';
+latohairline()
+	font-family: 'latohairline';
+latoitalic()
+	font-family: 'latoitalic';
+light()
+	font-weight 300;
+regular()
+	font-weight 400;
+semibold()
+	font-weight 600;
+bold()
+	font-weight 700;
+heavy()
+	font-weight 800;
+.align-center
+	text-align center;
+
+p
+	margin-bottom 20px
+	line-height normal
+body
+	font-size 12px
+	color #999
+	line-height normal
+
+
+//	#LIST
+// ===============================================
+ul
+	margin 0 0 15px 0;
+	li
+		margin 0 0 15px 15px; list-style disc outside;
+		ul, ol
+			margin 15px 0 10px 0;
+ol
+	margin 0 0 15px 0;
+	li
+		margin 0 0 15px 15px; list-style decimal inside;
+		ul, ol
+			margin 15px 0 10px 0;
+lino()
+	margin 0; list-style none
+	li
+		margin 0;
+		list-style none;
+
+
+//	#LINK
+// ===============================================
+a
+	color #f85800; text-decoration none; anim-all();
+	&:hover
+		text-decoration underline;
+	&.active 
+		cursor default; text-decoration none;
+
+li.active a 
+	cursor default; text-decoration none;
+
+
+
+//	#HEADER
+// ===============================================
+h1, h2, h3, h4, h5, h6
+	margin 0 0 30px 0;
+	color #4e5255; mainfont();
+h1
+	font-size 40px;
+h2
+	font-size 36px;
+h3
+	font-size 28px
+h4
+	font-size 16px
+
+
+
+//	#FORM
+// ===============================================
+label, input, button, select, textarea
+	color #333333; font-size 14px;
+
+select
+	width 260px; margin 0 0 10px 0; padding 10px; full();
+	background #fff; border 2px solid #cacaca;  
+
+input[type="text"]
+input[type="password"]
+input[type="email"]
+input[type="phone"]
+	width 300px
+	margin-bottom 10px
+	padding 10px 10px
+	full()
+	background #fff
+	border 1px solid #e6e6e6 
+	anim()
+	&:hover
+		//box-shadow inset 0 0 5px alpha(#cccccc, 0.1); 
+	&:focus
+		//box-shadow inset 0 0 5px alpha(#cccccc, 0.1); 
+	&.error
+		border-color #e44343; color #e44343; 
+	&.valid
+		border-color #3ac020;
+		
+input[type="submit"]
+	width auto
+	padding 15px 30px
+	color #fff
+	font-size 18px;
+	border none
+	anim()
+	&:hover
+		background #1aa257
+	&:active
+		opacity 0.8;
+
+textarea
+	width 238px
+	max-width 100%
+	height 100px
+	padding 20px;
+	background #fff
+	border 1px solid #e1e1e1
+	anim();
+	&:hover
+		box-shadow 1px 1px 5px rgba(204, 204, 204, 0.75) inset
+	&:focus
+		box-shadow 1px 1px 5px rgba(204, 204, 204, 0.75) inset
+	&.error
+		border-color #ff0000;
+	&.valid
+		border-color #3ac020;
+
+input[type=checkbox]
+	overflow hidden; 
+	display  none;
+	position absolute; width 10px; height 10px; margin 0; padding 0; border 0;
+input[type=checkbox] + label
+	display inline-block;
+	height 22px; padding-left 30px;
+	font-size 14px; line-height 23px; vertical-align middle;
+	cursor pointer;
+	background url("../img/checkbox.png") no-repeat;
+input[type=checkbox].lightblue + label
+	background url("../img/checkbox4.png") no-repeat;
+input[type=checkbox].light + label
+	background url("../img/checkbox3.png") no-repeat;
+input[type=checkbox] + label:hover
+	background-position 0 0; 
+input[type=checkbox]:checked + label
+	background-position 0 -22px;
+
+	
+input[type="radio"] + label 
+	cursor:pointer; font-size:14px; line-height:30px; margin:0px 20px 0px 0;
+input[type="radio"] + label::before 
+	content:""; display:inline-block; height:22px; width:22px; margin:0 10px -5px 0px; 
+	background:url("../img/radio.png") no-repeat;
+input[type="radio"]
+	display:none;
+input[type="radio"]:disabled + label 
+	cursor:default;
+input[type="radio"] + label:hover::before
+	background-position 0px 0px;
+input[type="radio"]:checked + label::before 
+	background-position 0 -22px;
+input[type="radio"]:disabled + label::before 
+	background-position:0px 0px;
+input[type="radio"]:checked:disabled + label::before 
+	background-position 0px -22px;
+
+
+
+//	TABLE
+// ===============================================
+table
+	width 100%;
+	td
+		vertical-align top;

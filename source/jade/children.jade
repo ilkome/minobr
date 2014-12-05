@@ -1,0 +1,57 @@
+extends _layout
+
+block append content
+
+	.panel-white
+		.panel-white__in
+			a(href="index.html").logo-minobr.icon.fl-left
+			ul.stage-navig
+				li.stage-navig__item
+					a(href="#").stage-navig__link_prev.is-disable 
+						.icon.icon-arrow-left
+						| назад
+				li.stage-navig__item
+					a(href="index.html").stage-navig__link_back 
+						| назад к карте
+						.icon.icon-arrow-top
+				li.stage-navig__item
+					a(href="school.html").stage-navig__link_next 
+						| далее
+						.icon.icon-arrow-right
+			a(href="#").user-prev.fl-right
+				.user-prev__ava.disp-tc_m
+					img(src="img/ava-default.png", alt="").user-prev__pic
+				.user-prev__name.disp-tc_m Александр Яковлев
+	
+	.l-main.stage-bg_children
+		.l-main__in 
+			.stage-box
+				.stage-box__name Детский сад
+				.stage-box__desc
+					.img.fl-left
+						img(src="img/bg-children.png", alt="")
+					.text.fl-left
+						img(src="img/c/children-info.png", alt="")
+				.circles
+					a(href="page-president.html").circle
+						.circle__pic: img(src="img/cir/pic-1.png", alt="")
+						.circle__name Президент
+					a(href="page-president.html").circle
+						.circle__pic: img(src="img/cir/pic-2.png", alt="")
+						.circle__name Государство
+					a(href="page-president.html").circle
+						.circle__pic: img(src="img/cir/pic-3.png", alt="")
+						.circle__name Родители
+					a(href="page-president.html").circle
+						.circle__pic: img(src="img/cir/pic-4.png", alt="")
+						.circle__name Детские лагеря
+					a(href="page-school.html").circle
+						.circle__pic: img(src="img/cir/pic-5.png", alt="")
+						.circle__name Дошкольники
+					a(href="page-president.html").circle
+						.circle__pic: img(src="img/cir/pic-6.png", alt="")
+						.circle__name Воспитатели
+					a(href="page-president.html").circle
+						.circle__pic: img(src="img/cir/pic-7.png", alt="")
+						.circle__name Дети&nbsp;с&nbsp;огр. возможностями
+		.pager

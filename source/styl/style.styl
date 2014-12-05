@@ -1,0 +1,385 @@
+@import "../css/normalize.css"
+@import "common.styl"
+
+
+//	#LAYOUT
+// ===============================================
+.page
+	position relative
+	min-height 100%
+	min-width 1340px
+	background #bbd4db url("../img/bg.png") center center repeat
+	cover()
+	color #5a7085
+	font-size 14px
+
+.style-nes
+	position relative
+	width 100%
+	height 100%
+	display table
+
+.l-wrap-left
+	z-index 101
+	position fixed
+	left 0
+	top 0
+	width 70px 
+	height 100% 
+	background-color #2a3137
+	border-right 6px solid #252a2f
+
+.l-main
+	position relative
+	display table-cell 
+.l-main_vac
+	@extend .l-main 
+	text-align center
+	vertical-align middle
+.l-main__in
+	position relative
+	max-width 1800px
+	margin 0 auto
+	padding-left 96px
+	padding-right 20px
+	full() 
+.content 
+	padding 160px 0 160px 0
+
+.l-content
+	padding 0px 20px 50px 96px 
+.l-footer
+	position absolute 
+	bottom 40px
+	width 100%
+
+
+//	#MENU
+// ===============================================
+.menu-left
+	lino()
+	
+	&__item
+		width 100%
+		display table
+	
+	&__link
+		display table-cell 
+		width 100%
+		height 100px
+		position relative
+		text-align center
+		vertical-align middle
+		anim()
+		&:hover
+			background #2d363e
+
+
+//	#ICON
+// ===============================================
+.icon
+	display inline-block
+	vertical-align baseline
+
+.icon-map
+	@extend .icon
+	width 23px
+	height 29px
+	background url("../img/i/i-map-a.png") no-repeat 
+.icon-com
+	@extend .icon
+	width 31px
+	height 31px
+	background url("../img/i/i-com.png") no-repeat 
+.icon-graph
+	@extend .icon
+	width 31px
+	height 31px
+	background url("../img/i/i-graph.png") no-repeat 
+.icon-cup
+	@extend .icon
+	width 31px
+	height 31px
+	background url("../img/i/i-cup.png") no-repeat 
+
+.icon-arrow-left
+	width 12px
+	height 10px
+	background url("../img/i/a-left-grey.png") no-repeat
+.icon-arrow-top
+	width 12px
+	height 11px
+	background url("../img/i/a-top-green.png") no-repeat
+.icon-arrow-right
+	width 12px
+	height 10px
+	background url("../img/i/a-left-grey.png") no-repeat
+	transform rotate(180deg)
+	
+
+//	#PAGE
+// ===============================================
+.panel-white
+	z-index 10
+	position fixed
+	left 0
+	top 20px
+	width 100%
+	min-width 1100px
+	text-align center
+	&__in
+		margin-left 96px
+		margin-right 20px
+		padding 11px 20px
+		background #fff
+		border-radius 4px
+		clearfix() 
+		opacity .6
+	
+.footer
+	z-index 10
+	position fixed
+	left 0
+	bottom 20px
+	width 100%
+	&__in
+		margin-left 96px
+		margin-right 20px
+		clearfix()
+	&__copy
+		color #8c969d
+		font-size 13px
+
+
+//	#SITE
+// ===============================================
+.logo-minobr
+	width 186px
+	height 43px
+	background url("../img/logo-minobr.png") no-repeat 
+	&:hover
+		opacity .8
+.user-prev
+	padding-right 15px
+	color #5a7085
+	font-size 16px
+	&__ava
+		padding-right 20px
+	&__name
+		font-size 16px
+
+// #map
+.map
+	position relative
+	display inline-block
+	vertical-align middle
+	margin 100px 0px 50px 0px
+	&__img
+		width 100%
+		max-width 1782px
+	&__item
+		&_children
+			position absolute
+			left 25%
+			top 76%
+			width 9%
+			height 13%
+		&_school
+			position absolute
+			left 33%
+			top 60%
+			width 10%
+			height 20%
+		&_technical
+			position absolute
+			left 43%
+			top 44%
+			width 13%
+			height 26%
+		&_univ
+			position absolute
+			left 39%
+			top 10%
+			width 19%
+			height 34%
+
+// #stage
+.stage-navig
+	display inline-block
+	padding-top 13px
+	lino()
+	&__item
+		display inline-block
+	&__link
+		display block
+		position relative
+		padding 0 30px
+		color #6B8094
+		font-size 16px
+		font-weight 600
+		.icon
+			opacity .8
+			anim()
+		&:hover
+			tdn() 
+			color #5A7085
+			.icon
+				opacity 1
+	&__link_prev
+		@extend .stage-navig__link
+		.icon
+			margin-right 20px
+	&__link_back
+		@extend .stage-navig__link
+		color #51BBA8
+		&:hover
+			color #3FA18F
+		.icon
+			margin-left 20px
+	&__link_next
+		@extend .stage-navig__link
+		.icon
+			margin-left 20px
+	.is-disable
+		color #bbc1c8
+		tdn() 
+		cursor default
+		.icon
+			opacity .6
+.stage-navig_sm
+	padding 10px
+	.stage-navig__link_prev,
+	.stage-navig__link_next,
+	.stage-navig__link_back
+		padding 0 10px
+	
+.stage-bg
+	&_school
+		background #fefefe url("../img/map-school.jpg") center top no-repeat
+		max-width 1800px
+	&_children
+		background #fefefe url("../img/map-children.jpg") center top no-repeat
+		max-width 1800px
+	&_technical
+		background #fefefe url("../img/map-technical.jpg") center top no-repeat
+		max-width 1800px
+	&_univer
+		background #fefefe url("../img/map-univer.jpg") center top no-repeat
+		max-width 1800px
+
+.stage-box
+	padding-top 230px
+	&__name
+		position relative
+		height 30px
+		text-align center
+		color #5A7085
+		font-size 20px
+		text-transform uppercase
+	&__desc
+		max-width 1200px
+		margin 0 auto
+		padding-top 98px
+		padding-left 154px
+		clearfix() 
+		full()
+		.text
+			padding-top 30px
+			padding-left 60px
+		&_school
+			@extend .stage-box__desc
+			padding-top 31px
+			padding-left 108px
+		&_technical
+			@extend .stage-box__desc
+			padding-top 53px
+			padding-left 225px
+		&_univer
+			@extend .stage-box__desc
+			padding-top 3px
+			padding-left 125px
+			.text
+				padding-top 100px
+.circles
+	padding-top 80px
+	padding-bottom 100px
+	.circle
+		display table-cell 
+		width 5%
+		padding 0 10px
+		text-align center
+		color #5A7085
+		font-size 16px
+		font-weight 400
+		&:hover
+			tdn()
+			.circle__pic
+				img
+					border 4px solid alpha(#778288, 0.2)
+		.circle__pic
+			padding-bottom 20px
+			img
+				display inline-block
+				border-radius 100%
+				border 4px solid transparent
+				anim()
+.pager
+	position absolute 
+	left 0px 
+	bottom 40px
+	width 100%
+	full() 
+	padding-left 96px
+	height 20px
+	background url("../img/pager.png") center 0 no-repeat
+	cursor pointer
+	&_num2
+		@extend .pager
+		background url("../img/pager-2.png") center 0 no-repeat
+	&_num3
+		@extend .pager
+		background url("../img/pager-3.png") center 0 no-repeat
+	&_num4
+		@extend .pager
+		background url("../img/pager-4.png") center 0 no-repeat
+		
+
+// #share
+.share
+	&__title
+		display table-cell
+		vertical-align middle
+		padding-right 15px
+		color #8c969d
+		font-size 13px
+	
+	&__links
+		lino()
+		display table-cell
+		vertical-align middle
+	
+	&__item
+		display table-cell
+		vertical-align middle
+	
+	&__link
+		display inline-block
+		padding 0 5px
+		anim()
+		&:hover
+			opacity .8	
+		&_vk
+			@extend .share__link
+			width 18px
+			height 10px
+			background url("../img/i/s-vk.png") no-repeat
+		&_tw
+			@extend .share__link
+			width 15px
+			height 12px
+			background url("../img/i/s-tw.png") no-repeat
+		&_fb
+			@extend .share__link
+			width 8px
+			height 18px
+			background url("../img/i/s-fb.png") no-repeat
