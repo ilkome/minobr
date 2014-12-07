@@ -2,6 +2,7 @@ doctype html
 //	proscom.ru
 //	Simple Communication
 html
+	block vars
 	include _head
 	
 	body.page
@@ -21,3 +22,6 @@ html
 						a(href="#").menu-left__link
 							.icon-cup
 			block content
+
+			unless noFooter
+				include _footer

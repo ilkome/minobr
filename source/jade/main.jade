@@ -1,14 +1,14 @@
 extends _layout
 
 block append content
-
 	.panel-white
-		.panel-white__in
-			a(href="main.html").logo-minobr.icon.fl-left
-			a(href="#").user-prev.fl-right
-				.user-prev__ava.disp-tc_m
-					img(src="img/ava-default.png", alt="").user-prev__pic
-				.user-prev__name.disp-tc_m Александр Яковлев
+		.l-wrap
+			.panel-white__in
+				a(href="main.html").logo-minobr.icon.fl-left
+				a(href="#").user-prev.fl-right
+					.user-prev__ava.disp-tc_m
+						img(src="img/ava-default.png", alt="").user-prev__pic
+					.user-prev__name.disp-tc_m Александр Яковлев
 	
 	.l-main_vac
 		.l-main__in
@@ -19,16 +19,3 @@ block append content
 				a(href="map-technical.html").map__item_technical
 				a(href="map-univer.html").map__item_univ
 				a(href="map-prof.html").map__item_prof
-
-	footer.footer 
-		.footer__in
-			.footer__copy.fl-left 2014 © Все права защищены
-			.share.fl-right
-				.share__title Поделиться
-				ul.share__links
-					li.share__item
-						a(href="#").share__link_fb
-					li.share__item
-						a(href="#").share__link_vk
-					li.share__item
-						a(href="#").share__link_tw

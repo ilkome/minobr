@@ -1,28 +1,31 @@
 extends _layout
+block vars
+	- var noFooter = true
 
 block append content
 
 	.panel-white
-		.panel-white__in
-			a(href="main.html").logo-minobr.icon.fl-left
-			ul.stage-navig
-				li.stage-navig__item
-					a(href="map-technical.html").stage-navig__link_prev
-						.icon.icon-arrow-left
-						| назад
-				li.stage-navig__item
-					a(href="main.html").stage-navig__link_back 
-						| назад к карте
-						.icon.icon-arrow-top
-				li.stage-navig__item
-					a(href="#").stage-navig__link_next.is-disable 
-						| далее
-						.icon.icon-arrow-right
-			a(href="#").user-prev.fl-right
-				.user-prev__ava.disp-tc_m
-					img(src="img/ava-default.png", alt="").user-prev__pic
-				.user-prev__name.disp-tc_m Александр Яковлев
-	
+		.l-wrap
+			.panel-white__in
+				a(href="main.html").logo-minobr.icon.fl-left
+				ul.stage-navig
+					li.stage-navig__item
+						a(href="map-technical.html").stage-navig__link_prev
+							.icon.icon-arrow-left
+							| назад
+					li.stage-navig__item
+						a(href="main.html").stage-navig__link_back 
+							| назад к карте
+							.icon.icon-arrow-top
+					li.stage-navig__item
+						a(href="#").stage-navig__link_next.is-disable 
+							| далее
+							.icon.icon-arrow-right
+				a(href="#").user-prev.fl-right
+					.user-prev__ava.disp-tc_m
+						img(src="img/ava-default.png", alt="").user-prev__pic
+					.user-prev__name.disp-tc_m Александр Яковлев
+		
 	.l-main.stage-bg_univer
 		.stage-bg__in.stage-bg__in_0
 			.l-main__in 

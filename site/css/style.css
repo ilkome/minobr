@@ -280,6 +280,10 @@ table td {
   background-color: #2a3137;
   border-right: 6px solid #252a2f;
 }
+.l-wrap {
+  max-width: 1800px;
+  margin: 0 auto;
+}
 .l-main,
 .l-main_vac {
   position: relative;
@@ -403,7 +407,7 @@ table td {
 }
 .footer {
   z-index: 10;
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 20px;
   width: 100%;
@@ -434,6 +438,9 @@ table td {
   padding-right: 15px;
   color: #5a7085;
   font-size: 16px;
+}
+.user-prev:hover {
+  opacity: 0.8;
 }
 .user-prev__ava {
   padding-right: 20px;
@@ -847,4 +854,7 @@ table td {
   width: 8px;
   height: 18px;
   background: url("../img/i/s-fb.png") no-repeat;
+}
+.content__pic {
+  text-align: center;
 }

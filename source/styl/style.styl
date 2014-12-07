@@ -26,7 +26,9 @@
 	height 100% 
 	background-color #2a3137
 	border-right 6px solid #252a2f
-
+.l-wrap
+	max-width 1800px
+	margin 0 auto
 .l-main
 	position relative
 	display table-cell 
@@ -134,10 +136,11 @@
 		border-radius 4px
 		clearfix() 
 		opacity .6
+		
 	
 .footer
 	z-index 10
-	position fixed
+	position absolute
 	left 0
 	bottom 20px
 	width 100%
@@ -162,6 +165,8 @@
 	padding-right 15px
 	color #5a7085
 	font-size 16px
+	&:hover
+		opacity .8
 	&__ava
 		padding-right 20px
 	&__name
@@ -398,3 +403,6 @@
 			width 8px
 			height 18px
 			background url("../img/i/s-fb.png") no-repeat
+			
+.content__pic
+	text-align center
