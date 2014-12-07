@@ -258,19 +258,17 @@ table td {
   vertical-align: top;
 }
 .page {
-  position: relative;
-  min-height: 100%;
   min-width: 1340px;
-  background: #bbd4db url("../img/bg.png") center center repeat;
+  background: #c1dae0 url("../img/bg.png") center center repeat-y;
   background-size: cover;
   color: #5a7085;
   font-size: 14px;
 }
 .style-nes {
-  position: relative;
+  display: table;
   width: 100%;
   height: 100%;
-  display: table;
+  position: relative;
 }
 .l-wrap-left {
   z-index: 101;
@@ -286,6 +284,8 @@ table td {
 .l-main_vac {
   position: relative;
   display: table-cell;
+  width: 100%;
+  height: 100%;
 }
 .l-main_vac {
   text-align: center;
@@ -299,11 +299,8 @@ table td {
   padding-right: 20px;
   box-sizing: border-box;
 }
-.content {
-  padding: 160px 0 160px 0;
-}
 .l-content {
-  padding: 0px 20px 50px 96px;
+  padding: 160px 0 160px 0;
 }
 .l-footer {
   position: absolute;
@@ -482,6 +479,13 @@ table td {
   width: 19%;
   height: 34%;
 }
+.map__item_prof {
+  position: absolute;
+  left: 65%;
+  top: 4%;
+  width: 9%;
+  height: 13%;
+}
 .stage-navig {
   display: inline-block;
   padding-top: 13px;
@@ -558,21 +562,35 @@ table td {
 .stage-navig_sm .stage-navig__link_back {
   padding: 0 10px;
 }
+.stage-bg {
+  position: relative;
+}
 .stage-bg_school {
-  background: #fefefe url("../img/map-school.jpg") center top no-repeat;
+  background: #fefefe url("../img/map-school.png") center top no-repeat;
   max-width: 1800px;
 }
 .stage-bg_children {
-  background: #fefefe url("../img/map-children.jpg") center top no-repeat;
+  background: #fefefe url("../img/map-children.png") center top no-repeat;
   max-width: 1800px;
 }
 .stage-bg_technical {
-  background: #fefefe url("../img/map-technical.jpg") center top no-repeat;
+  background: #fefefe url("../img/map-technical.png") center top no-repeat;
   max-width: 1800px;
 }
 .stage-bg_univer {
-  background: #fefefe url("../img/map-univer.jpg") center top no-repeat;
+  background: #fefefe url("../img/map-univer.png") center top no-repeat;
   max-width: 1800px;
+}
+.stage-bg_prof {
+  background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg__in {
+  background: rgba(255,255,255,0.7);
+  height: 100%;
+}
+.stage-bg__in_0 {
+  background: none;
 }
 .stage-box {
   padding-top: 230px;
