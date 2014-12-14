@@ -19,48 +19,48 @@ element('header', array(
         <div class="circles">
           <a href="<?= Router::url('/pages/info/03-01?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">03-01</div>
+              <img src="<?= Router::url('/img/cir/pic-16.png') ?>" alt=""></div>
+            <div class="circle__name">Численность студентов</div>
           </a>
           <a href="<?= Router::url('/pages/info/03-02?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">03-02</div>
+              <img src="<?= Router::url('/img/cir/pic-17.png') ?>" alt=""></div>
+            <div class="circle__name">Техникумы и колледжи</div>
           </a>
           <a href="<?= Router::url('/pages/info/03-03?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">03-03</div>
+              <img src="<?= Router::url('/img/cir/pic-18.png') ?>" alt=""></div>
+            <div class="circle__name">Стипендии</div>
           </a>
           <a href="<?= Router::url('/pages/info/03-04?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">03-04 (??)</div>
+              <img src="<?= Router::url('/img/cir/pic-19.png') ?>" alt=""></div>
+            <div class="circle__name">WorldSkills</div>
           </a>
           <a href="<?= Router::url('/pages/info/03-05?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">03-05</div>
+              <img src="<?= Router::url('/img/cir/pic-14.png') ?>" alt=""></div>
+            <div class="circle__name">Финансирование</div>
           </a>
           <a href="<?= Router::url('/pages/info/03-06?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">03-06</div>
+              <img src="<?= Router::url('/img/cir/pic-15.png') ?>" alt=""></div>
+            <div class="circle__name">Зарплаты преподавателей</div>
           </a>
           <a href="<?= Router::url('/pages/info/13-01?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">13-01</div>
+              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+            <div class="circle__name">LINK Молодежная политика</div>
           </a>
           <a href="<?= Router::url('/pages/info/14-01?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">14-01</div>
+              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+            <div class="circle__name">LINK "Доступная среда"</div>
           </a>
           <a href="<?= Router::url('/pages/info/14-02?from=technical') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">14-02</div>
+              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+            <div class="circle__name">LINK Социальная поддержка граждан</div>
           </a>
         </div>
       </div>

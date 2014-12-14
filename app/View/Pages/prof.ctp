@@ -18,23 +18,23 @@ $this->element('header', array(
         <div class="circles">
           <a href="<?= Router::url('/pages/info/05-01?from=prof') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">05-01 (??)</div>
+              <img src="<?= Router::url('/img/cir/pic-25.png') ?>" alt=""></div>
+            <div class="circle__name">Дополнительное профессиональное образование</div>
           </a>
           <a href="<?= Router::url('/pages/info/05-02?from=prof') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">05-02 (??)</div>
+              <img src="<?= Router::url('/img/cir/pic-17.png') ?>" alt=""></div>
+            <div class="circle__name">Образовательные организации</div>
           </a>
           <a href="<?= Router::url('/pages/info/05-03?from=prof') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">05-03</div>
+              <img src="<?= Router::url('/img/cir/pic-14.png') ?>" alt=""></div>
+            <div class="circle__name">Финансирование</div>
           </a>
           <a href="<?= Router::url('/pages/info/04-02?from=prof') ?>" class="circle">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
-            <div class="circle__name">04-02 (??)</div>
+              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+            <div class="circle__name">LINK Количество вузов</div>
           </a>
         </div>
       </div>
