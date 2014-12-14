@@ -1,5 +1,5 @@
 /*
-	Gulp shik v2.4
+	Gulp shik v2.5
 
 	Ilya Komichev
 	shikarniy.com
@@ -9,13 +9,22 @@
 //	#modules
 // ==============================================
 var gulp = require('gulp');
-var stylus = require('gulp-stylus');
-var jade = require('gulp-jade');
-var prefix = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
-var plumber = require('gulp-plumber');
+var gulpif = require('gulp-if');
+
+var changed = require('gulp-changed');
+var cached = require('gulp-cached');
+var filter = require('gulp-filter');
 var customwatch = require('gulp-watch');
+
+var plumber = require('gulp-plumber');
 var notify = require("gulp-notify");
+
+var stylus = require('gulp-stylus');
+var prefix = require('gulp-autoprefixer');
+
+var jade = require('gulp-jade');
+var jadeInheritance = require('gulp-jade-inheritance');
 
 
 //	#paths
@@ -53,9 +62,8 @@ gulp.task('webserver', function () {
 
 //	#watch
 // ==============================================
-gulp.watch([paths.sources.jade.inc], ['jade']);
 gulp.watch([paths.sources.stylus.inc], ['stylus']);
-
+gulp.watch('../source/jade/*.jade', ['reload-jade', 'setWatch']);
 
 //	#gulp-watch
 gulp.task('customwatch', function() {
@@ -66,15 +74,6 @@ gulp.task('customwatch', function() {
 		.pipe(stylus())
 		.pipe(prefix())
 		.pipe(gulp.dest(paths.css))
-		.pipe(connect.reload())
-	
-	//	#jade
-	customwatch([paths.sources.jade.src, paths.sources.jade.excl])
-		.pipe(plumber())
-		.pipe(jade({
-			pretty: true
-		}))
-		.pipe(gulp.dest(paths.root))
 		.pipe(connect.reload())
 
 	// JavaScript
@@ -96,25 +95,47 @@ gulp.task('stylus', function () {
 		.pipe(connect.reload())
 });
 
-// 	#jade 
+
+//	#jade
+// ==============================================
 gulp.task('jade', function() {
-	gulp.src([paths.sources.jade.src, paths.sources.jade.excl])
-		.pipe(plumber({errorHandler: notify.onError("<%= error.message %>")}))
+	return gulp.src('../source/jade/*.jade')
+
+		// only pass unchanged *main* files and *all* the partials
+		.pipe(changed('../site', {extension: '.html'}))
+
+		// filter out unchanged partials, but it only works when watching
+		.pipe(gulpif(global.isWatching, cached('jade')))
+
+		// find files that depend on the files that have changed
+		.pipe(jadeInheritance({basedir: '../source/jade/'}))
+
+		// filter out partials (folders and files starting with "_" )
+		.pipe(filter(function (file) {
+			return !/\/_/.test(file.path) || !/^_/.test(file.relative);
+		}))
+
+		// process jade templates
 		.pipe(jade({
 			pretty: true
 		}))
-		.pipe(gulp.dest(paths.root))
-		.pipe(connect.reload())
 
-	/*return gulp.src(SRC)
-        .pipe(changed(DEST))
-        // ngmin will only get the files that
-        // changed since the last time it was run
-        .pipe(ngmin())
-        .pipe(gulp.dest(DEST));*/
+		// save all the files
+		.pipe(gulp.dest("../site/"))
 });
 
 
-//	#run-tasks
-// ==============================================
-gulp.task('default', ['webserver', 'customwatch', 'jade', 'stylus']);
+//
+gulp.task('setWatch', function() {
+	global.isWatching = true;
+});
+
+
+gulp.task('reload-jade', ['jade'], function () {
+	gulp.src('../source/jade/*.jade')
+		.pipe(connect.reload());
+});
+
+
+//	#default
+gulp.task('default', ['webserver', 'stylus', 'reload-jade']);
