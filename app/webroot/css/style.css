@@ -591,6 +591,10 @@ table td {
   background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
   max-width: 1800px;
 }
+.stage-bg_science {
+  background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
+  max-width: 1800px;
+}
 .stage-bg__in {
   background: rgba(255,255,255,0.7);
   height: 100%;

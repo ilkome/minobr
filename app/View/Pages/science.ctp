@@ -4,14 +4,14 @@ $this->element('header', array(
   'linknext' => "/pages/finance"
 )); 
 ?>
-<div class="l-main stage-bg_prof">
+<div class="l-main stage-bg_science">
   <div class="stage-bg__in">
     <div class="l-main__in">
       <div class="stage-box">
         <div class="stage-box__name">Наука</div>
         <div class="stage-box__desc">
           <div class="img fl-left">
-            <img src="<?= Router::url('/img/bg-prof.png') ?>" alt=""></div>
+            <img src="<?= Router::url('/img/bg-science.png') ?>" alt=""></div>
           <div class="text fl-left">
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>

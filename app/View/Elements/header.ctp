@@ -1,6 +1,6 @@
 <div class="panel-white">
   <div class="l-wrap">
-    <div class="panel-white__in"><a href="<?= Router::url('/') ?>" class="logo-minobr icon fl-left"></a>
+    <div class="panel-white__in"><a class="logo-minobr icon fl-left"></a>
       <ul class="stage-navig">
         <li class="stage-navig__item">
           <? if (isset($linkprev)): ?>

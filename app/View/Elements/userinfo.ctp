@@ -5,4 +5,5 @@
   </a>
 <? else: ?>
 	<a href="<?= Router::url('/users/login') ?>" class="user-prev fl-right">Войти</a>
+	<a href="<?= Router::url('/users/add') ?>" class="user-prev fl-right">Регистрация</a>
 <? endif; ?>

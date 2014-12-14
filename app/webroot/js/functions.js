@@ -301,3 +301,16 @@ $(document).ready(function() {
   })
  
 });
+
+
+$(function() {
+	$(".share__link_fb").click(function() {
+		Share.facebook(document.URL);
+	});
+	$(".share__link_vk").click(function() {
+		Share.vkontakte(document.URL);
+	});
+	$(".share__link_tw").click(function() {
+		Share.twitter(document.URL);
+	});
+});

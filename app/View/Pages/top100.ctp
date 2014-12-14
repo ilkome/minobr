@@ -11,7 +11,7 @@ $this->element('header', array(
         <div class="stage-box__name">5топ100</div>
         <div class="stage-box__desc">
           <div class="img fl-left">
-            <img src="<?= Router::url('/img/bg-prof.png') ?>" alt=""></div>
+            <img src="<?= Router::url('/img/bg-5top100.png') ?>" alt=""></div>
           <div class="text fl-left">
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
