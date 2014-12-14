@@ -1,50 +1,50 @@
 Share = {
     vkontakte: function(purl, ptitle, pimg, text) {
         url  = 'http://vkontakte.ru/share.php?';
-        url += 'url='          + encodeURIComponent(purl);
-        url += '&title='       + encodeURIComponent(ptitle);
-        url += '&description=' + encodeURIComponent(text);
-        url += '&image='       + encodeURIComponent(pimg);
+        if (purl) url += 'url='          + encodeURIComponent(purl);
+        if (ptitle) url += '&title='       + encodeURIComponent(ptitle);
+        if (text) url += '&description=' + encodeURIComponent(text);
+        if (pimg) url += '&image='       + encodeURIComponent(pimg);
         url += '&noparse=true';
         Share.popup(url);
     },
     odnoklassniki: function(purl, text) {
         url  = 'http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1';
-        url += '&st.comments=' + encodeURIComponent(text);
-        url += '&st._surl='    + encodeURIComponent(purl);
+        if (text) url += '&st.comments=' + encodeURIComponent(text);
+        if (purl) url += '&st._surl='    + encodeURIComponent(purl);
         Share.popup(url);
     },
     facebook: function(purl, ptitle, pimg, text) {
         url  = 'http://www.facebook.com/sharer.php?s=100';
-        url += '&p[title]='     + encodeURIComponent(ptitle);
-        url += '&p[summary]='   + encodeURIComponent(text);
-        url += '&p[url]='       + encodeURIComponent(purl);
-        url += '&p[images][0]=' + encodeURIComponent(pimg);
+        if (ptitle) url += '&p[title]='     + encodeURIComponent(ptitle);
+        if (text) url += '&p[summary]='   + encodeURIComponent(text);
+        if (purl) url += '&p[url]='       + encodeURIComponent(purl);
+        if (pimg) url += '&p[images][0]=' + encodeURIComponent(pimg);
         Share.popup(url);
     },
     twitter: function(purl, ptitle) {
         url  = 'http://twitter.com/share?';
-        url += 'text='      + encodeURIComponent(ptitle);
-        url += '&url='      + encodeURIComponent(purl);
-        url += '&counturl=' + encodeURIComponent(purl);
+        if (ptitle) url += 'text='      + encodeURIComponent(ptitle);
+        if (purl) url += '&url='      + encodeURIComponent(purl);
+        if (purl) url += '&counturl=' + encodeURIComponent(purl);
         Share.popup(url);
     },
     mailru: function(purl, ptitle, pimg, text) {
         url  = 'http://connect.mail.ru/share?';
-        url += 'url='          + encodeURIComponent(purl);
-        url += '&title='       + encodeURIComponent(ptitle);
-        url += '&description=' + encodeURIComponent(text);
-        url += '&imageurl='    + encodeURIComponent(pimg);
+        if (purl) url += 'url='          + encodeURIComponent(purl);
+        if (ptitle) url += '&title='       + encodeURIComponent(ptitle);
+        if (text) url += '&description=' + encodeURIComponent(text);
+        if (pimg) url += '&imageurl='    + encodeURIComponent(pimg);
         Share.popup(url)
     },
     linkedin: function(purl, ptitle, psource, text) {
-    	url = 'http://www.linkedin.com/shareArticle?';
-    	url += 'mini=' + 'true';
-    	url += '&url=' + encodeURIComponent(purl);
-    	url += '&title=' + encodeURIComponent(ptitle);
-    	url += '&summary=' + encodeURIComponent(ptext);
-    	url += '&source=' + encodeURIComponent(psource);
-    	Share.popup(url);
+        url = 'http://www.linkedin.com/shareArticle?';
+        url += 'mini=' + 'true';
+        if (purl) url += '&url=' + encodeURIComponent(purl);
+        if (ptitle) url += '&title=' + encodeURIComponent(ptitle);
+        if (ptext) url += '&summary=' + encodeURIComponent(ptext);
+        if (psource) url += '&source=' + encodeURIComponent(psource);
+        Share.popup(url);
     },
 
     popup: function(url) {
