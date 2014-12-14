@@ -43,6 +43,24 @@ class PagesController extends AppController {
 		$this->Auth->allow('display');
 	}
 
+	public $pageTitles = array(
+		"home" => "Главная",
+		"children" => "Детский сад",
+		"school" => "Школа",
+		"technical" => "Техникум или Колледж",
+		"univer" => "Университет",
+		"prof" => "Дополнительное профессиональное образование",
+		"science" => "Наука",
+		"finance" => "Финансирование",
+		"president" => "Указы президента",
+		"top100" => "5 Топ 100",
+		"building" => "Строительство детских садов",
+		"global" => "Глобальное образование",
+		"further" => "Дополнительное образование для детей",
+		"youth" => "Молодежная политика",
+		"available" => "Доступная среда и социальная поддержка граждан"
+	);
+
 /**
  * Displays a view
  *
@@ -65,9 +83,15 @@ class PagesController extends AppController {
 		if (!empty($path[1])) {
 			$subpage = $path[1];
 		}
+
+		$completePath = implode('/', $path);
+
 		if (!empty($path[$count - 1])) {
-			$title_for_layout = $this->siteTitlte;
-			$title_for_layout = Inflector::humanize($path[$count - 1]);
+			if (isset($this->pageTitles[$completePath])) {
+				$title_for_layout = $this->pageTitles[$completePath];
+			} else {
+				$title_for_layout = Inflector::humanize($path[$count - 1]);
+			}
 		}
 
 		if (isset($this->params['url']['from'])) {
@@ -79,7 +103,7 @@ class PagesController extends AppController {
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 
 		try {
-			$this->render(implode('/', $path));
+			$this->render($completePath);
 		} catch (MissingViewException $e) {
 			if (Configure::read('debug')) {
 				throw $e;
