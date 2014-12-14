@@ -9,8 +9,12 @@
 		<link rel="icon" type="image/png" href="favicon.png">
 		<!-- Styles-->
 		<link href="<?= Router::url('/css/style.css') ?>" rel="stylesheet">
+		<link href="<?= Router::url('/css/owl.carousel.css') ?>" rel="stylesheet">
+		<link href="<?= Router::url('/css/owl.theme.css') ?>" rel="stylesheet">
+		<link href="<?= Router::url('/css/owl.transitions.css') ?>" rel="stylesheet">
 		<!-- Scripts-->
 		<script src="<?= Router::url('/js/jquery.min.js') ?>" type="text/javascript"></script>
+		<script src="<?= Router::url('/js/owl.carousel.min.js') ?>" type="text/javascript"></script>
 		<script src="<?= Router::url('/js/functions.js') ?>" type="text/javascript"></script>
 	</head>
 	<body class="page">
