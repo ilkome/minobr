@@ -16,17 +16,17 @@ $this->element('header', array(
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/08-01') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/08-01?from=president') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">08-01</div>
           </a>
-          <a href="<?= Router::url('/pages/info/08-02') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/08-02?from=president') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">08-02</div>
           </a>
-          <a href="<?= Router::url('/pages/info/08-03') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/08-03?from=president') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">08-03</div>

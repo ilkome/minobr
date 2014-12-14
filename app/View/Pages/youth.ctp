@@ -16,7 +16,7 @@ $this->element('header', array(
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/13-01') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/13-01?from=youth') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">13-01</div>

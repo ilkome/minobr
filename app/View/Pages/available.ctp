@@ -15,12 +15,12 @@ $this->element('header', array(
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/14-01') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/14-01?from=available') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">14-01</div>
           </a>
-          <a href="<?= Router::url('/pages/info/14-02') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/14-02?from=available') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">14-02</div>

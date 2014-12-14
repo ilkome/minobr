@@ -1,6 +1,6 @@
 <?=
 $this->element('infoheader', array(
-  'linkup' => "/pages/univer",
+  'linkup' => "/pages/" . $comeFrom,
   'linkprev' => "/pages/info/04-01",
   'linknext' => "/pages/info/04-03"
 ))

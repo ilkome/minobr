@@ -16,32 +16,32 @@ element('header', array(
             <img src="<?= Router::url('/img/c/children-info.png') ?>" alt=""></div>
         </div>
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/01-01') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/01-01?from=children') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">01-01</div>
           </a>
-          <a href="<?= Router::url('/pages/info/01-02') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/01-02?from=children') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">01-02</div>
           </a>
-          <a href="<?= Router::url('/pages/info/01-03') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/01-03?from=children') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">01-03</div>
           </a>
-          <a href="<?= Router::url('/pages/info/01-04') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/01-04?from=children') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">01-04</div>
           </a>
-          <a href="<?= Router::url('/pages/info/01-06') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/01-06?from=children') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">01-05</div>
           </a>
-          <a href="<?= Router::url('/pages/info/01-06') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/01-06?from=children') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">01-06</div>

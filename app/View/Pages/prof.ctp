@@ -16,22 +16,22 @@ $this->element('header', array(
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/05-01') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/05-01?from=prof') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">05-01 (??)</div>
           </a>
-          <a href="<?= Router::url('/pages/info/05-02') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/05-02?from=prof') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">05-02 (??)</div>
           </a>
-          <a href="<?= Router::url('/pages/info/05-03') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/05-03?from=prof') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">05-03</div>
           </a>
-          <a href="<?= Router::url('/pages/info/04-02') ?>" class="circle">
+          <a href="<?= Router::url('/pages/info/04-02?from=prof') ?>" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">04-02 (??)</div>

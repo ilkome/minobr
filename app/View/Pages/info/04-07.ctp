@@ -1,8 +1,8 @@
 <?=
 $this->element('infoheader', array(
-  'linkup' => "/pages/univer",
-  'linkprev' => "/pages/info/04-06-2",
-  'linknext' => "/pages/info/04-08"
+  'linkup' => "/pages/" . $comeFrom,
+  'linkprev' => "/pages/info/04-06-2?from=" . $comeFrom,
+  'linknext' => "/pages/info/04-08?from=" . $comeFrom
 ))
 ?>
 <div class="l-main">

@@ -1,7 +1,7 @@
 <?=
 $this->element('infoheader', array(
   'linkup' => "/pages/" . $comeFrom,
-  'linkprev' => "/pages/info/12-03"
+  'linkprev' => "/pages/info/12-03?from=" . $comeFrom
 ))
 ?>
 <div class="l-main">
