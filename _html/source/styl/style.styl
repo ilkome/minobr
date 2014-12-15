@@ -181,37 +181,152 @@
 	&__img
 		width 100%
 		max-width 1782px
-	&__item
-		&_children
+	&__item		
+		.hover
+			position absolute
+			width 145px
+			.hover_top
+				background url("../img/map-title.png")
+				width 145px
+				height 4px
+			.hover_body
+				background rgba(36,44,46,0.25)
+				width 145px
+				color: white;
+				padding: 15px 0px 8px 0px;
+				font-weight: 700;
+				text-transform: uppercase;
+			.hover_bottom
+				background url("../img/map-title.png") 0px -42px
+				width 145px
+				height 20px
+		
+		&:hover
+			.hover
+				.hover_top
+					background-position 0px -62px
+				.hover_body
+					background rgba(36,44,46,0.5)
+				.hover_bottom
+					background-position 0px -104px
+
+		&.children
 			position absolute
 			left 25%
 			top 76%
 			width 9%
 			height 13%
-		&_school
+			.hover 
+				left: 61%;
+				top: -37%;
+		&.school
 			position absolute
 			left 33%
 			top 60%
 			width 10%
 			height 20%
-		&_technical
+			.hover 
+				left: 53%;
+				top: -16%;
+		&.technical
 			position absolute
 			left 43%
 			top 44%
 			width 13%
 			height 26%
-		&_univ
+			.hover 
+				left: 47%;
+				top: -5%;
+		&.univ
 			position absolute
 			left 39%
 			top 10%
 			width 19%
 			height 34%
-		&_prof
+			.hover 
+				left: 55%;
+				top: 15%;
+		&.prof
 			position absolute
-			left 65%
-			top 4%
-			width 9%
-			height 13%
+			left: 57%;
+			top: 0%;
+			width: 13%;
+			height: 23%;
+			.hover 
+				left: 59%;
+				top: 20%;
+		&.science
+			position absolute
+			left: 27%;
+			top: 11%;
+			width: 10%;
+			height: 27%;
+			.hover 
+				left: 35%;
+				top: -15%;
+		&.president
+			position absolute
+			left: 72%;
+			top: 13%;
+			width: 8%;
+			height: 29%;
+			.hover 
+				left: 70%;
+				top: 24%;
+		&.youth
+			position absolute
+			left: 7%;
+			top: 29%;
+			width: 20%;
+			height: 32%;
+			.hover 
+				left: 54%;
+				top: -16%;
+		&.finance
+			position absolute
+			left: 61%;
+			top: 32%;
+			width: 14%;
+			height: 25%;
+			.hover 
+				left: 62%;
+				top: 9%;
+		&.additional
+			position absolute
+			left: 25%;
+			top: 43%;
+			width: 17%;
+			height: 22%;
+			.hover 
+				left: 25%;
+				top: 0%;
+		&.global
+			position absolute
+			left: 69%;
+			top: 57%;
+			width: 12%;
+			height: 22%;
+			.hover 
+				left: 76%;
+				top: 49%;
+		&.top100
+			position absolute
+			left: 61%;
+			top: 56%;
+			width: 7%;
+			height: 31%;
+			.hover 
+				left: 44%;
+				top: -5%;
+		&.building
+			position absolute
+			left: 44%;
+			top: 80%;
+			width: 13%;
+			height: 20%;
+			.hover 
+				left: 14%;
+				top: -4%;
 
 // #stage
 .stage-navig
@@ -289,7 +404,7 @@
 		background url("../img/map-decrees.png") calc(50% - 635px) 57px no-repeat
 		max-width 1800px
 	&_global
-		background url("../img/map-global.png") calc(50% - 967px) -267px no-repeat
+		background url("../img/map-global.png") calc(50% - 969px) -293px no-repeat
 		max-width 1800px
 	&_top100
 		background url("../img/map-top100.png") calc(50% - 631px) -152px no-repeat

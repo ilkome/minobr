@@ -4,7 +4,7 @@ $this->element('header', array(
   'linknext' => "/pages/top100"
 )); 
 ?>
-<div class="l-main stage-bg_prof">
+<div class="l-main stage-bg_decrees">
   <div class="stage-bg__in">
     <div class="l-main__in">
       <div class="stage-box">

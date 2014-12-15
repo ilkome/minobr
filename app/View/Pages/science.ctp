@@ -4,7 +4,7 @@ $this->element('header', array(
   'linknext' => "/pages/finance"
 )); 
 ?>
-<div class="l-main stage-bg_science">
+<div class="l-main stage-bg_children-more-2">
   <div class="stage-bg__in">
     <div class="l-main__in">
       <div class="stage-box">

@@ -457,40 +457,179 @@ table td {
   width: 100%;
   max-width: 1782px;
 }
-.map__item_children {
+.map__item .hover {
+  position: absolute;
+  width: 145px;
+}
+.map__item .hover .hover_top {
+  background: url("../img/map-title.png");
+  width: 145px;
+  height: 4px;
+}
+.map__item .hover .hover_body {
+  background: rgba(36,44,46,0.25);
+  width: 145px;
+  color: #fff;
+  padding: 15px 0px 8px 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.map__item .hover .hover_bottom {
+  background: url("../img/map-title.png") 0px -42px;
+  width: 145px;
+  height: 20px;
+}
+.map__item:hover .hover .hover_top {
+  background-position: 0px -62px;
+}
+.map__item:hover .hover .hover_body {
+  background: rgba(36,44,46,0.5);
+}
+.map__item:hover .hover .hover_bottom {
+  background-position: 0px -104px;
+}
+.map__item.children {
   position: absolute;
   left: 25%;
   top: 76%;
   width: 9%;
   height: 13%;
 }
-.map__item_school {
+.map__item.children .hover {
+  left: 61%;
+  top: -37%;
+}
+.map__item.school {
   position: absolute;
   left: 33%;
   top: 60%;
   width: 10%;
   height: 20%;
 }
-.map__item_technical {
+.map__item.school .hover {
+  left: 53%;
+  top: -16%;
+}
+.map__item.technical {
   position: absolute;
   left: 43%;
   top: 44%;
   width: 13%;
   height: 26%;
 }
-.map__item_univ {
+.map__item.technical .hover {
+  left: 47%;
+  top: -5%;
+}
+.map__item.univ {
   position: absolute;
   left: 39%;
   top: 10%;
   width: 19%;
   height: 34%;
 }
-.map__item_prof {
+.map__item.univ .hover {
+  left: 55%;
+  top: 15%;
+}
+.map__item.prof {
   position: absolute;
-  left: 65%;
-  top: 4%;
-  width: 9%;
-  height: 13%;
+  left: 57%;
+  top: 0%;
+  width: 13%;
+  height: 23%;
+}
+.map__item.prof .hover {
+  left: 59%;
+  top: 20%;
+}
+.map__item.science {
+  position: absolute;
+  left: 27%;
+  top: 11%;
+  width: 10%;
+  height: 27%;
+}
+.map__item.science .hover {
+  left: 35%;
+  top: -15%;
+}
+.map__item.president {
+  position: absolute;
+  left: 72%;
+  top: 13%;
+  width: 8%;
+  height: 29%;
+}
+.map__item.president .hover {
+  left: 70%;
+  top: 24%;
+}
+.map__item.youth {
+  position: absolute;
+  left: 7%;
+  top: 29%;
+  width: 20%;
+  height: 32%;
+}
+.map__item.youth .hover {
+  left: 54%;
+  top: -16%;
+}
+.map__item.finance {
+  position: absolute;
+  left: 61%;
+  top: 32%;
+  width: 14%;
+  height: 25%;
+}
+.map__item.finance .hover {
+  left: 62%;
+  top: 9%;
+}
+.map__item.additional {
+  position: absolute;
+  left: 25%;
+  top: 43%;
+  width: 17%;
+  height: 22%;
+}
+.map__item.additional .hover {
+  left: 25%;
+  top: 0%;
+}
+.map__item.global {
+  position: absolute;
+  left: 69%;
+  top: 57%;
+  width: 12%;
+  height: 22%;
+}
+.map__item.global .hover {
+  left: 76%;
+  top: 49%;
+}
+.map__item.top100 {
+  position: absolute;
+  left: 61%;
+  top: 56%;
+  width: 7%;
+  height: 31%;
+}
+.map__item.top100 .hover {
+  left: 44%;
+  top: -5%;
+}
+.map__item.building {
+  position: absolute;
+  left: 44%;
+  top: 80%;
+  width: 13%;
+  height: 20%;
+}
+.map__item.building .hover {
+  left: 14%;
+  top: -4%;
 }
 .stage-navig {
   display: inline-block;
@@ -604,7 +743,7 @@ table td {
   max-width: 1800px;
 }
 .stage-bg_global {
-  background: url("../img/map-global.png") calc(50% - 967px) -267px no-repeat;
+  background: url("../img/map-global.png") calc(50% - 969px) -293px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_top100 {

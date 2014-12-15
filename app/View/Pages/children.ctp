@@ -5,7 +5,7 @@ element('header', array(
 )); 
 ?>
 <div class="l-main stage-bg_children">
-  <div class="stage-bg__in stage-bg__in_0">
+  <div class="stage-bg__in stage-bg__in">
     <div class="l-main__in">
       <div class="stage-box">
         <div class="stage-box__name">Детский сад</div>

@@ -259,7 +259,7 @@ table td {
 }
 .page {
   min-width: 1340px;
-  background: #c1dae0 url("../img/bg.png") center center repeat-y;
+  background: #c1dae0 url("../img/bg.png") center top repeat-y;
   background-size: cover;
 }
 .style-nes {
@@ -457,40 +457,179 @@ table td {
   width: 100%;
   max-width: 1782px;
 }
-.map__item_children {
+.map__item .hover {
+  position: absolute;
+  width: 145px;
+}
+.map__item .hover .hover_top {
+  background: url("../img/map-title.png");
+  width: 145px;
+  height: 4px;
+}
+.map__item .hover .hover_body {
+  background: rgba(36,44,46,0.25);
+  width: 145px;
+  color: #fff;
+  padding: 15px 0px 8px 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.map__item .hover .hover_bottom {
+  background: url("../img/map-title.png") 0px -42px;
+  width: 145px;
+  height: 20px;
+}
+.map__item:hover .hover .hover_top {
+  background-position: 0px -62px;
+}
+.map__item:hover .hover .hover_body {
+  background: rgba(36,44,46,0.5);
+}
+.map__item:hover .hover .hover_bottom {
+  background-position: 0px -104px;
+}
+.map__item.children {
   position: absolute;
   left: 25%;
   top: 76%;
   width: 9%;
   height: 13%;
 }
-.map__item_school {
+.map__item.children .hover {
+  left: 61%;
+  top: -37%;
+}
+.map__item.school {
   position: absolute;
   left: 33%;
   top: 60%;
   width: 10%;
   height: 20%;
 }
-.map__item_technical {
+.map__item.school .hover {
+  left: 53%;
+  top: -16%;
+}
+.map__item.technical {
   position: absolute;
   left: 43%;
   top: 44%;
   width: 13%;
   height: 26%;
 }
-.map__item_univ {
+.map__item.technical .hover {
+  left: 47%;
+  top: -5%;
+}
+.map__item.univ {
   position: absolute;
   left: 39%;
   top: 10%;
   width: 19%;
   height: 34%;
 }
-.map__item_prof {
+.map__item.univ .hover {
+  left: 55%;
+  top: 15%;
+}
+.map__item.prof {
   position: absolute;
-  left: 65%;
-  top: 4%;
-  width: 9%;
-  height: 13%;
+  left: 57%;
+  top: 0%;
+  width: 13%;
+  height: 23%;
+}
+.map__item.prof .hover {
+  left: 59%;
+  top: 20%;
+}
+.map__item.science {
+  position: absolute;
+  left: 27%;
+  top: 11%;
+  width: 10%;
+  height: 27%;
+}
+.map__item.science .hover {
+  left: 35%;
+  top: -15%;
+}
+.map__item.president {
+  position: absolute;
+  left: 72%;
+  top: 13%;
+  width: 8%;
+  height: 29%;
+}
+.map__item.president .hover {
+  left: 70%;
+  top: 24%;
+}
+.map__item.youth {
+  position: absolute;
+  left: 7%;
+  top: 29%;
+  width: 20%;
+  height: 32%;
+}
+.map__item.youth .hover {
+  left: 54%;
+  top: -16%;
+}
+.map__item.finance {
+  position: absolute;
+  left: 61%;
+  top: 32%;
+  width: 14%;
+  height: 25%;
+}
+.map__item.finance .hover {
+  left: 62%;
+  top: 9%;
+}
+.map__item.additional {
+  position: absolute;
+  left: 25%;
+  top: 43%;
+  width: 17%;
+  height: 22%;
+}
+.map__item.additional .hover {
+  left: 25%;
+  top: 0%;
+}
+.map__item.global {
+  position: absolute;
+  left: 69%;
+  top: 57%;
+  width: 12%;
+  height: 22%;
+}
+.map__item.global .hover {
+  left: 76%;
+  top: 49%;
+}
+.map__item.top100 {
+  position: absolute;
+  left: 61%;
+  top: 56%;
+  width: 7%;
+  height: 31%;
+}
+.map__item.top100 .hover {
+  left: 44%;
+  top: -5%;
+}
+.map__item.building {
+  position: absolute;
+  left: 44%;
+  top: 80%;
+  width: 13%;
+  height: 20%;
+}
+.map__item.building .hover {
+  left: 14%;
+  top: -4%;
 }
 .stage-navig {
   display: inline-block;
@@ -571,32 +710,60 @@ table td {
 .stage-bg {
   position: relative;
 }
-.stage-bg_school {
-  background: #fefefe url("../img/map-school.png") center top no-repeat;
+.stage-bg_children {
+  background: url("../img/map-big-cl.png") calc(50% + 741px) -1064px no-repeat;
   max-width: 1800px;
 }
-.stage-bg_children {
-  background: #fefefe url("../img/map-children.png") center top no-repeat;
+.stage-bg_school {
+  background: url("../img/map-big-cl.png") calc(50% + 362px) -855px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_technical {
-  background: #fefefe url("../img/map-technical.png") center top no-repeat;
+  background: url("../img/map-technical.png") calc(50% - 80px) -195px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_univer {
-  background: #fefefe url("../img/map-univer.png") center top no-repeat;
+  background: url("../img/map-univer.png") calc(50% - 161px) 195px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_prof {
-  background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
+  background: url("../img/map-prof.png") calc(50% - 565px) 355px no-repeat;
   max-width: 1800px;
 }
-.stage-bg_science {
-  background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
+.stage-bg_youth-policy {
+  background: url("../img/map-big.png") calc(50% + 485px) 146px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_decrees {
+  background: url("../img/map-decrees.png") calc(50% - 905px) 237px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_finance {
+  background: url("../img/map-decrees.png") calc(50% - 635px) 57px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_global {
+  background: url("../img/map-global.png") calc(50% - 969px) -293px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_top100 {
+  background: url("../img/map-top100.png") calc(50% - 631px) -152px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_bilding {
+  background: url("../img/map-big-cl.png") calc(50% - 350px) -1137px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_children-more {
+  background: url("../img/map-children-more.png") calc(50% + 335px) -78px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_children-more-2 {
+  background: url("../img/map-children-more-2.png") calc(50% + 166px) 246px no-repeat;
   max-width: 1800px;
 }
 .stage-bg__in {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.85);
   height: 100%;
 }
 .stage-bg__in_0 {
@@ -702,12 +869,15 @@ table td {
   padding-top: 100px;
 }
 .circles {
+  width: auto;
+  margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 100px;
 }
 .circles .circle {
   display: table-cell;
   width: 5%;
+  max-width: 200px;
   padding: 0 10px;
   text-align: center;
   color: #5a7085;
@@ -730,6 +900,17 @@ table td {
   -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
 }
+.circles_minwidth {
+  width: 300px;
+  margin: 0 auto;
+}
+.circles_minwidth2 {
+  width: 600px;
+  margin: 0 auto;
+}
+.circles_minwidth2 .circle {
+  width: 150px;
+}
 .pager,
 .pager_num2,
 .pager_num3,
@@ -746,6 +927,7 @@ table td {
   padding-left: 96px;
   height: 20px;
   background: url("../img/pager.png") center 0 no-repeat;
+  text-align: center;
   cursor: pointer;
 }
 .pager_num2,
@@ -777,6 +959,9 @@ table td {
 .pager_num3_num4_num4,
 .pager_num2_num3_num4_num4 {
   background: url("../img/pager-4.png") center 0 no-repeat;
+}
+.pager_nobg {
+  background: none;
 }
 .share__title {
   display: table-cell;
