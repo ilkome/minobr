@@ -259,7 +259,7 @@ table td {
 }
 .page {
   min-width: 1340px;
-  background: #c1dae0 url("../img/bg.png") center center repeat-y;
+  background: #c1dae0 url("../img/bg.png") center top repeat-y;
   background-size: cover;
 }
 .style-nes {
@@ -571,32 +571,60 @@ table td {
 .stage-bg {
   position: relative;
 }
-.stage-bg_school {
-  background: #fefefe url("../img/map-school.png") center top no-repeat;
+.stage-bg_children {
+  background: url("../img/map-big-cl.png") calc(50% + 741px) -1064px no-repeat;
   max-width: 1800px;
 }
-.stage-bg_children {
-  background: #fefefe url("../img/map-children.png") center top no-repeat;
+.stage-bg_school {
+  background: url("../img/map-big-cl.png") calc(50% + 362px) -855px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_technical {
-  background: #fefefe url("../img/map-technical.png") center top no-repeat;
+  background: url("../img/map-technical.png") calc(50% - 80px) -195px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_univer {
-  background: #fefefe url("../img/map-univer.png") center top no-repeat;
+  background: url("../img/map-univer.png") calc(50% - 161px) 195px no-repeat;
   max-width: 1800px;
 }
 .stage-bg_prof {
-  background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
+  background: url("../img/map-prof.png") calc(50% - 565px) 355px no-repeat;
   max-width: 1800px;
 }
-.stage-bg_science {
-  background: url("../img/map-big.png") calc(50% - 560px) 350px no-repeat;
+.stage-bg_youth-policy {
+  background: url("../img/map-big.png") calc(50% + 485px) 146px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_decrees {
+  background: url("../img/map-decrees.png") calc(50% - 905px) 237px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_finance {
+  background: url("../img/map-decrees.png") calc(50% - 635px) 57px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_global {
+  background: url("../img/map-global.png") calc(50% - 967px) -267px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_top100 {
+  background: url("../img/map-top100.png") calc(50% - 631px) -152px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_bilding {
+  background: url("../img/map-big-cl.png") calc(50% - 350px) -1137px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_children-more {
+  background: url("../img/map-children-more.png") calc(50% + 335px) -78px no-repeat;
+  max-width: 1800px;
+}
+.stage-bg_children-more-2 {
+  background: url("../img/map-children-more-2.png") calc(50% + 166px) 246px no-repeat;
   max-width: 1800px;
 }
 .stage-bg__in {
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.85);
   height: 100%;
 }
 .stage-bg__in_0 {
@@ -702,12 +730,15 @@ table td {
   padding-top: 100px;
 }
 .circles {
+  width: auto;
+  margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 100px;
 }
 .circles .circle {
   display: table-cell;
   width: 5%;
+  max-width: 200px;
   padding: 0 10px;
   text-align: center;
   color: #5a7085;
@@ -730,6 +761,17 @@ table td {
   -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
 }
+.circles_minwidth {
+  width: 300px;
+  margin: 0 auto;
+}
+.circles_minwidth2 {
+  width: 600px;
+  margin: 0 auto;
+}
+.circles_minwidth2 .circle {
+  width: 150px;
+}
 .pager,
 .pager_num2,
 .pager_num3,
@@ -746,6 +788,7 @@ table td {
   padding-left: 96px;
   height: 20px;
   background: url("../img/pager.png") center 0 no-repeat;
+  text-align: center;
   cursor: pointer;
 }
 .pager_num2,
@@ -777,6 +820,9 @@ table td {
 .pager_num3_num4_num4,
 .pager_num2_num3_num4_num4 {
   background: url("../img/pager-4.png") center 0 no-repeat;
+}
+.pager_nobg {
+  background: none;
 }
 .share__title {
   display: table-cell;
