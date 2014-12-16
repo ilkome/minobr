@@ -1,6 +1,6 @@
 <?= 
 $this->element('header', array(
-  'linkprev' => "/pages/youth"
+  'linkprev' => "/pages/further"
 )); 
 ?>
 <div class="l-main stage-bg_prof">
@@ -14,18 +14,21 @@ $this->element('header', array(
           <div class="text fl-left">
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
+
+
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/14-01?from=available') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">14-01</div>
           </a>
-          <a href="<?= Router::url('/pages/info/14-02?from=available') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">14-02</div>
           </a>
         </div>
+
       </div>
     </div>
     <div class="pager"></div>

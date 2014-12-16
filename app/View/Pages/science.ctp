@@ -16,37 +16,37 @@ $this->element('header', array(
             <img src="<?= Router::url('/img/c/prof-info.png') ?>" alt=""></div>
         </div>
         <div class="circles">
-          <a href="<?= Router::url('/pages/info/06-01-1?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">06-01-1</div>
           </a>
-          <a href="<?= Router::url('/pages/info/06-01-2?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">06-01-2</div>
           </a>
-          <a href="<?= Router::url('/pages/info/06-02?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">06-02</div>
           </a>
-          <a href="<?= Router::url('/pages/info/06-03?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">06-03</div>
           </a>
-          <a href="<?= Router::url('/pages/info/06-04?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">06-04</div>
           </a>
-          <a href="<?= Router::url('/pages/info/06-05?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">06-05</div>
           </a>
-          <a href="<?= Router::url('/pages/info/08-02?from=science') ?>" class="circle">
+          <a href="#" class="circle">
             <div class="circle__pic">
               <img src="<?= Router::url('/img/cir/lock.png') ?>" alt=""></div>
             <div class="circle__name">08-02</div>

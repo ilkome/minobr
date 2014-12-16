@@ -330,6 +330,7 @@ table td {
   vertical-align: middle;
   -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out;
+  cursor: default;
 }
 .menu-left__link:hover {
   background: #2d363e;
@@ -858,15 +859,24 @@ table td {
   padding-top: 3px;
   padding-left: 125px;
 }
-.stage-box__desc_univer .text,
-.stage-box__desc_school_univer .text,
-.stage-box__desc_technical_univer .text,
-.stage-box__desc_school_technical_univer .text,
-.stage-box__desc_univer_univer .text,
-.stage-box__desc_school_univer_univer .text,
-.stage-box__desc_technical_univer_univer .text,
-.stage-box__desc_school_technical_univer_univer .text {
+.stage-box__desc_univer .stage-text {
   padding-top: 100px;
+}
+.stage-text {
+  padding-top: 30px;
+  padding-left: 60px;
+  width: 400px;
+  color: #5a7085;
+}
+.stage-text__title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.stage-text__content {
+  width: 300px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .circles {
   width: auto;
@@ -928,7 +938,6 @@ table td {
   height: 20px;
   background: url("../img/pager.png") center 0 no-repeat;
   text-align: center;
-  cursor: pointer;
 }
 .pager_num2,
 .pager_num2_num2,

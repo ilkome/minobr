@@ -23,13 +23,16 @@
 			<div class="l-wrap-left">
 				<ul class="menu-left">
 					<li class="menu-left__item"><a href="<?= Router::url('/') ?>" class="menu-left__link">
-							<div class="icon-map"></div></a></li>
-					<li class="menu-left__item"><a href="<?= Router::url('/pages/side/faq') ?>" class="menu-left__link">
-							<div class="icon-com"></div></a></li>
-					<li class="menu-left__item"><a href="<?= Router::url('/pages/side/rating') ?>" class="menu-left__link">
-							<div class="icon-graph"></div></a></li>
-					<li class="menu-left__item"><a href="<?= Router::url('/pages/side/troph') ?>" class="menu-left__link">
-							<div class="icon-cup"></div></a></li>
+						<div class="icon-map"></div></a></li>
+					<!-- <li class="menu-left__item"><a href="<?= Router::url('/pages/side/faq') ?>" class="menu-left__link"> -->
+					<li class="menu-left__item"><a href="#" class="menu-left__link">
+						<div class="icon-com"></div></a></li>
+					<!-- <li class="menu-left__item"><a href="<?= Router::url('/pages/side/rating') ?>" class="menu-left__link"> -->
+					<li class="menu-left__item"><a href="#" class="menu-left__link">
+						<div class="icon-graph"></div></a></li>
+					<li class="menu-left__item"><a href="#" class="menu-left__link">
+					<!-- <li class="menu-left__item"><a href="<?= Router::url('/pages/side/troph') ?>" class="menu-left__link"> -->
+						<div class="icon-cup"></div></a></li>
 				</ul>
 			</div>
 

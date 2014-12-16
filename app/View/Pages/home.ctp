@@ -2,7 +2,8 @@
 	<div class="l-wrap">
 		<div class="panel-white__in">
 			<a class="logo-minobr icon fl-left"></a>
-			<?= $this->element("userinfo") ?></div>
+			<?= $this->element("userinfo") ?>
+		</div>
 	</div>
 </div>
 <div class="l-main_vac">
@@ -44,7 +45,7 @@
 					<div class="hover_bottom"></div>
 				</div>
 			</a>
-			<a href="<?= Router::url('/pages/youth') ?>" class="map__item youth">
+			<a href="<?= Router::url('/pages/info/13-01') ?>" class="map__item youth">
 				<div class="hover">
 					<div class="hover_top"></div>
 					<div class="hover_body">Молодежная политика</div>
@@ -96,7 +97,7 @@
 			<a href="<?= Router::url('/pages/building') ?>" class="map__item building">
 				<div class="hover">
 					<div class="hover_top"></div>
-					<div class="hover_body">МРДСО</div>
+					<div class="hover_body">Строительство детских садов</div>
 					<div class="hover_bottom"></div>
 				</div>
 			</a>
