@@ -59,32 +59,32 @@ $this->element('header', array(
         <div class="circles js-change-stage-text">
           <a href="<?= Router::url('/pages/info/07-00?from=finance') ?>" class="circle" data-stage="1">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-14.png') ?>" alt=""></div>
             <div class="circle__name">07-00</div>
           </a>
           <a href="<?= Router::url('/pages/info/07-01?from=finance') ?>" class="circle" data-stage="2">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-1.png') ?>" alt=""></div>
             <div class="circle__name">07-01</div>
           </a>
           <a href="<?= Router::url('/pages/info/07-02?from=finance') ?>" class="circle" data-stage="3">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-31.png') ?>" alt=""></div>
             <div class="circle__name">07-02</div>
           </a>
           <a href="<?= Router::url('/pages/info/07-03?from=finance') ?>" class="circle" data-stage="4">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-32.png') ?>" alt=""></div>
             <div class="circle__name">07-03</div>
           </a>
           <a href="<?= Router::url('/pages/info/07-04?from=finance') ?>" class="circle" data-stage="5">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-33.png') ?>" alt=""></div>
             <div class="circle__name">07-04</div>
           </a>
           <a href="<?= Router::url('/pages/info/07-05?from=finance') ?>" class="circle" data-stage="6">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-34.png') ?>" alt=""></div>
             <div class="circle__name">07-05</div>
           </a>
           <a href="#" class="circle" data-stage="lock">
@@ -94,7 +94,7 @@ $this->element('header', array(
           </a>
           <a href="<?= Router::url('/pages/info/07-07?from=finance') ?>" class="circle" data-stage="7">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-35.png') ?>" alt=""></div>
             <div class="circle__name">07-07</div>
           </a>
           <a href="#" class="circle" data-stage="lock">

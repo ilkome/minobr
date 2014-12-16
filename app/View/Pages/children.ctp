@@ -58,12 +58,12 @@ element('header', array(
         <div class="circles js-change-stage-text">
           <a href="<?= Router::url('/pages/info/01-01?from=children') ?>" class="circle" data-stage="1">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-26.png') ?>" alt=""></div>
             <div class="circle__name">Численность детей дошкольного возраста</div>
           </a>
           <a href="<?= Router::url('/pages/info/01-02?from=children') ?>" class="circle" data-stage="2">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-27.png') ?>" alt=""></div>
             <div class="circle__name">Число дошкольных организаций в России</div>
           </a>
           <a href="<?= Router::url('/pages/info/01-03?from=children') ?>" class="circle" data-stage="3">
@@ -73,7 +73,7 @@ element('header', array(
           </a>
           <a href="<?= Router::url('/pages/info/01-04?from=children') ?>" class="circle" data-stage="4">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-28.png') ?>" alt=""></div>
             <div class="circle__name">Доступность дошкольного образования</div>
           </a>
           <a href="<?= Router::url('/pages/info/01-05?from=children') ?>" class="circle" data-stage="5">
@@ -88,12 +88,12 @@ element('header', array(
           </a>
           <a href="<?= Router::url('/pages/info/10-01?from=children') ?>" class="circle" data-stage="7">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-29.png') ?>" alt=""></div>
             <div class="circle__name">Строительство детских садов</div>
           </a>
           <a href="<?= Router::url('/pages/info/14-01?from=children') ?>" class="circle" data-stage="8">
             <div class="circle__pic">
-              <img src="<?= Router::url('/img/cir/quest.png') ?>" alt=""></div>
+              <img src="<?= Router::url('/img/cir/pic-30.png') ?>" alt=""></div>
             <div class="circle__name">Доступная среда</div>
           </a>
         </div>
